@@ -6,7 +6,7 @@
   if (time < 10) {
     greetTime = ["Good morning", "Selamat pagi", "Доброе утро", "صباح الخير"];
   } else if (time < 20) {
-    greetTime = ["Good day", "Selamat siang", "Добрый день", "مساء الخير"];
+    greetTime = ["Good afternoon", "Selamat siang", "Добрый день", "مساء الخير"];
   } else {
     greetTime = ["Good evening", "Selamat malam", "Спокойной ночи", "تصبح على خير"];
   }
