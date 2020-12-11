@@ -20,15 +20,26 @@ window.addEventListener('click', e => {
 	})
 
 /*this is to welcome user using alert by determining what time in their browser and few language support*/
-  var time = new Date().getHours();
-  if (time < 10) {
-    greetTime = ["Good morning", "Selamat pagi", "Доброе утро", "صباح الخير"];
-  } else if (time < 20) {
-    greetTime = ["Good afternoon", "Selamat siang", "Добрый день", "مساء الخير"];
-  } else {
-    greetTime = ["Good evening", "Selamat malam", "Спокойной ночи", "تصبح على خير"];
-  }
-
+var time = new Date().getHours(); 
+var greetTime = "";
+  
+ 	switch(time) {
+  		case (time < 10): 
+   	greetTime = ["Good morning", "Selamat pagi", "Доброе утро", "صباح الخير"];
+  		break;
+  		case (time < 14):
+   	greetTime = ["Good day", "Selamat siang", "Добрый день", "مساء الخير"];
+   	break;
+  		case (time < 16):
+   	greetTime = ["Good afternoon", "Selamat sore", "Добрый день", "مساء الخير" ];
+   	break;
+  		case (time < 21):
+   	greetTime = ["Good evening", "Selamat malam", "Добрый вечер", "مساء الخير"];
+   	break;
+  		default: 
+   	greetTime = ["Good night", "Selamat malam", "Спокойной ночи", "تصبح على خير"];
+	}
+	
 	var language = window.navigator.userLanguage || window.navigator.language;
 	if (language === "en"||language === "en-US") {
 	greetLang = greetTime[0];
@@ -40,6 +51,6 @@ window.addEventListener('click', e => {
 	greetLang = greetTime[3];
 	}
 
-  const greeting = greetLang;
-
+  		const greeting = greetLang;
+  
 alert(greeting)
