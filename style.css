@@ -64,6 +64,7 @@ body {
 			display: none;
 			text-align: justify;	
 			margin: 0;
+			color: white;
 		}
 
 	main {
@@ -194,7 +195,7 @@ body {
 	   	}
 		
 	    	.nav .menu {
-			display: block;
+			display: inline;
 			position: relative;
 			left: 0;
 		}
@@ -212,7 +213,7 @@ body {
 		
 		.nav.responsive .menu {
 			float: none;
-			display: block;
+			display: inline;
 			position: relative;
 		}
 		
@@ -220,6 +221,7 @@ body {
 			position: relative;
 			text-align: left;
 			border-radius: 0;
-			
+			display: block;
+			padding: 0;
 		}
 	}
