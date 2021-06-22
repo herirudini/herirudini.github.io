@@ -267,19 +267,23 @@ footer {
         display: none;
     }
 
-    .nav li:before {
-        content: "\00BB \0020";
-    }
-
     .nav .menu,
     .nav.responsive .menu {
         display: flex;
         flex-direction: row;
+		align-items: center;
+		justify-content: flex-start;
         position: relative;
         left: 0;
         background-color: black;
     }
-
+	.nav .list {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: flex-start;
+	}
     #content,
     aside {
         width: 100%;
@@ -297,9 +301,10 @@ footer {
 
     .nav.responsive li {
         /* position: relative; */
-        text-align: left;
+	
+        /* text-align: left; */
         border-radius: 0;
-        display: block;
-        padding: 0;
+        /* display: block; */
+        padding: 10px;
     }
 }
