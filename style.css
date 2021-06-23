@@ -229,13 +229,17 @@ aside {
 }
 
 footer {
-    padding: 1%;
+    padding: 1% 1% 10px 1%;
     color: white;
-    background-color: #989bfc;
+    background-color: rgba(128, 128, 128, 1);
     text-align: center;
     font-weight: bold;
 }
-
+footer i{
+    font-style: normal;
+    font-size: 90%;
+    color: rgba(255, 255, 255, 0.5);
+}
 * {
     box-sizing: border-box;
 }
