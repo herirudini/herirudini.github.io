@@ -498,7 +498,8 @@ footer i {
   .modal-content {
     margin: auto;
     display: block;
-    height: 100%;
+    height: max-content;
+    max-width: 70%;
   }
   
   /* Add Animation */
@@ -538,7 +539,7 @@ footer i {
   }
   
   /* 100% Image Width on Smaller Screens */
-  @media only screen and (max-width: 700px){
+  @media only screen and (max-width: 600px){
     .modal-content {
         height: unset;
       width: 100%;
