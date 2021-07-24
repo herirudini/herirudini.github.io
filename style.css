@@ -1,12 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700 &display=swap");
 
 /* @import url('https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css'); */
+@font-face {
+  font-family: "NotoSans-CondensedLight";
+  src: url("/assets/font/NotoSans-hinted/NotoSans-CondensedLight.ttf"),
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 html {
   scroll-behavior: smooth;
   /* height: 100%; */
 }
 body {
-  font-family: "DM Sans", sans-serif;
+  font-family: "NotoSans-CondensedLight", "DM Sans", sans-serif;
   margin: 0;
   padding: 0;
   background-color: rgba(128, 128, 128, 0.1);
@@ -36,6 +44,7 @@ body > header {
 }
 h1 {
   margin: 10px 0 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 h3 {
   color: #6a67fa;
@@ -47,10 +56,12 @@ h4 {
 }
 
 p {
-  font-size: smaller;
+  font-size: medium;
+  line-height: 1.4;
+  font-weight: lighter;
 }
 .jumbotron {
-  font-size: 20px;
+  /* font-size: 20px; */
   padding: 150px 1% 1% 1%;
   margin: 0 15%;
   background-image: url("./assets/jumbotron.jpg");
