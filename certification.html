@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Curriculum Vitae - Heri Rudini</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+		integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=devices-width, initial-scale=1">
+	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+	<meta content="utf-8" http-equiv="encoding">
+</head>
+
+<body>
+    <div id="myModal" class="modal" onclick="closeModalImage()">
+		<span class="close">&times;</span>
+		<img class="modal-content" id="img01">
+	</div>
+	<header>
+		<!-- <div class="jumbotron">
+			<img src="./assets/profile-img3.jpeg" class="profile-img" alt="Lulus Sidang Akhir">
+		</div> -->
+		<div class="title">
+			<h1>Heri Rudini</h1>
+			<p lang="en" translate="no"><b>herirudini@live.com</b></p>
+			<div class="badge flexrow">
+				<a href="https://linkedin.com/in/heri-rudini-8996981b3" target="_blank" class="fab fa-linkedin-square"></a>
+				<a href="https://github.com/herirudini" target="_blank" class="fab fa-github-square"></a>
+				<a href="https://wa.link/srtyjm" target="_blank" class="fab fa-whatsapp-square"></a>
+			</div>
+		</div>
+		<nav id="myNav" class="nav">
+			<ul>
+				<div class="menu">
+					<a href="javascript:void(0);" onclick="myButton()"><i class="fa fa-bars"></i></a>
+				</div>
+				<div class="list flexrow">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="projects.html">My Projects</a></li>
+					<li><a href="aboutme.html">About Me</a></li>
+					<li><a href="certification.html">Certification</a></li>
+				</div>
+			</ul>
+		</nav>
+	</header>
+
+	<main class="flexrow">
+		<div id="content" class="wide-content">
+			<h2 class="stripe-heading">Certificate list</h2>
+            <article id="" class="card">
+				<h3>Web Programming</h3>
+				<img src="./assets/certification/sertifikat_dicoding.jpg" class="featured-image" alt="Certificate image" id="cert-dicoding-img" onclick="showModalImage('cert-dicoding-img')">
+                <div>
+                    <em class="date">October 2021 - November 2021</em>
+                    <p lang="en-US" translate="yes">
+                        Organized by Dicoding
+                    </p>
+                </div>
+				<div class="clear"></div>
+			</article>
+			<article id="" class="card">
+				<h3>UX Design</h3>
+				<img src="./assets/certification/UX Design.jpg" class="featured-image" alt="Certificate image" id="cert-ruangguru-img" onclick="showModalImage('cert-ruangguru-img')">
+                <div>
+                    <em class="date">September 2021 - October 2021</em>
+                    <p lang="en-US" translate="yes">
+                        Organized by Ruang Guru 
+                    </p>
+                </div>
+				<div class="clear"></div>
+			</article>
+            <article id="" class="card">
+				<h3>IT Support</h3>
+				<img src="./assets/certification/Course-net Indonesia Certificate.jpg" class="featured-image" alt="Certificate image" id="cert-coursenet-img" onclick="showModalImage('cert-coursenet-img')">
+                <div>
+                    <em class="date">July 2021 - August 2021</em>
+                    <p lang="en-US" translate="yes">
+                        Organized by Course-Net
+                    </p>
+                </div>
+				<div class="clear"></div>
+			</article>
+		</div>
+	</main>
+	<footer>
+		<p>Portofolio of Heri Rudini, 2020-2021</p>
+		<i>Developed by Heri Rudini</i>
+	</footer>
+	<script src="script.js"></script>
+</body>
+
+</html>

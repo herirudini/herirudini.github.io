@@ -13,6 +13,10 @@
 </head>
 
 <body>
+	<div id="myModal" class="modal" onclick="closeModalImage()">
+		<span class="close">&times;</span>
+		<img class="modal-content" id="img01">
+	</div>
 	<header>
 		<!-- <div class="jumbotron">
 			<img src="./assets/profile-img3.jpeg" class="profile-img" alt="Lulus Sidang Akhir">
@@ -35,6 +39,7 @@
 					<li><a href="index.html">Home</a></li>
 					<li><a href="projects.html">My Projects</a></li>
 					<li><a href="aboutme.html">About Me</a></li>
+					<li><a href="certification.html">Certification</a></li>
 				</div>
 			</ul>
 		</nav>
@@ -43,9 +48,9 @@
 	<main class="flexrow">
 		<div id="content" class="wide-content">
 			<h2 class="stripe-heading">My Projects</h2>
-			<article id="Home" class="card">
+			<article id="" class="card">
 				<h3>Vitamix</h3>
-				<img src="./assets/Vitamix.png" class="featured-image" alt="Vitamix website">
+				<img id="vitamix-img" src="./assets/projects/Vitamix.png" class="featured-image" alt="Vitamix website" onclick="showModalImage('vitamix-img')">
 				<p lang="en-US" translate="yes">
 					This is a blog supposed for marketing. This blog have multi pages, namely: Home Page, About Page,
 					and Details Page.
@@ -61,11 +66,45 @@
 					button that will expanded out the hidden category list when you tap on it.
 				</p>
 				<p lang="en-US" translate="yes">Here's the link to try this website : <a href="https://herirudini.github.io/vitamix/" target="_blank">https://herirudini.github.io/vitamix/</a></p>
-				<p lang="en-US" translate="yes">You can also check the source code  : <a href="https://github.com/herirudini/vitamix" target="_blank">https://github.com/herirudini/vitamix</a></p>
-
+					<p lang="en-US" translate="yes">You can also check the source code  : <a href="https://github.com/herirudini/vitamix" target="_blank">https://github.com/herirudini/vitamix</a></p>	
+				<div>
+					<h4>Tags:</h4>
+					<em class="opacity">
+					#HTML5 #CSS3 #JQuery
+					</em>
+				</div>
+				
 				<div class="clear"></div>
 			</article>
-
+			<article id="" class="card">
+				<h3>Acong Kelontong</h3>
+				<img id="acong-img-1" src="./assets/projects/order.png" class="featured-image" alt="Web preview" onclick="showModalImage('acong-img-1')">
+				<p lang="en-US" translate="yes">
+					This is a web application used for retail company like for example Alfamart, Indomaret, etc. This app uses role method, namely: Owner, Inventory,
+					Finance, and Cashier. Every role have their own "to-do-list" according to their jobdesc, and the "Owner" role have special menu to access all role pages.
+					As a workspace application that supposed to use in office computer, there's no mobile interface included.
+				</p>
+				<p lang="en-US" translate="yes">Link : <a href="https://acongkelontong.herokuapp.com/" target="_blank">https://acongkelontong.herokuapp.com/</a> (email: acong@mail.com , pass: 1234)</p>
+					<p lang="en-US" translate="yes">Source code  : The source code couldn't be published at the moment</p>	
+				<div>
+					<b>Other preview:</b>
+					<ul>
+						<li>
+							<img src="./assets/projects/outcome.png" class="featured-image" alt="Web preview" id="acong-img-2" onclick="showModalImage('acong-img-2')">
+						</li>
+						<li>
+							<img src="./assets/projects/addsup.png" class="featured-image" alt="Web preview" id="acong-img-3" onclick="showModalImage('acong-img-3')">
+						</li>
+					</ul>
+				</div>
+				<div>
+					<h4>Tags:</h4>
+					<em class="opacity">
+					#Angular #Express #Mongoose #Typescript #NodeJS #MongoDB #NPM #Bootstrap
+					</em>
+				</div>
+				<div class="clear"></div>
+			</article>
 		</div>
 	</main>
 	<footer>

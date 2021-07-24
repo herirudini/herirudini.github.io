@@ -13,9 +13,14 @@
 </head>
 
 <body>
+	<div id="myModal" class="modal" onclick="closeModalImage()">
+		<span class="close">&times;</span>
+		<img class="modal-content" id="img01">
+	</div>
 	<header>
 		<div class="jumbotron">
-			<img src="./assets/profile-img3.jpeg" class="profile-img" alt="Lulus Sidang Akhir">
+			<img id="profile-img" src="./assets/profile-img3.jpeg" class="profile-img" alt="Lulus Sidang Akhir"
+				onclick="showModalImage('profile-img')">
 		</div>
 		<div class="title">
 			<h1>Heri Rudini</h1>
@@ -39,6 +44,7 @@
 					<li><a href="index.html">Home</a></li>
 					<li><a href="projects.html">My Projects</a></li>
 					<li><a href="aboutme.html">About Me</a></li>
+					<li><a href="certification.html">Certification</a></li>
 				</div>
 			</ul>
 		</nav>
@@ -73,8 +79,10 @@
 				<em class="date">1 May 2021</em>
 				<img src="./assets/logo-dicoding.JPG" class="featured-image" alt="Logo Skill Academy">
 				<p>
-					I've taken a course to gain my skill in web programming. This is basic web programming course organized by Dicoding.Id, 
-					in this course i learn more in fundamental HTML CSS and Javascript. I've learn the basic concept of what's called "clean code", reusable
+					I've taken a course to gain my skill in web programming. This is basic web programming course
+					organized by Dicoding.Id,
+					in this course i learn more in fundamental HTML CSS and Javascript. I've learn the basic concept of
+					what's called "clean code", reusable
 					function, and minimal line of code but really powerfull.
 				</p>
 			</article>
@@ -112,11 +120,14 @@
 					<p>Have your time to enjoy reading my portofolio, i post everything about my career-growth here in
 						this blog.</p>
 					<p>Regards.</p>
-					<em>Bandung City, West-Java, Indonesia</em>
+					<em class="opacity">Bandung City, West-Java, Indonesia</em>
 				</section>
 				<section class="event">
-					<h3>Hashtags</h3>
-					<em>#Angular #Mongoose #Express #NodeJS #Typescript #HTML5 #CSS3 #ES6 #Javascript #JQuery</em>
+					<h3>Tags</h3>
+					<em class="opacity">#Angular #Mongoose #Express #NodeJS #Typescript #HTML5 #CSS3 #ES6 #Javascript
+						#JQuery
+						#Jira #Scrum #GIT #GitHub #NestJS #SCSS #Tailwind
+					</em>
 				</section>
 
 			</div>
