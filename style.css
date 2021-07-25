@@ -44,7 +44,7 @@ body > header {
 }
 h1 {
   margin: 10px 0 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 h3 {
   color: #6a67fa;
@@ -58,7 +58,7 @@ h4 {
 p {
   font-size: medium;
   line-height: 1.4;
-  font-weight: lighter;
+  font-weight: 350;
 }
 .jumbotron {
   /* font-size: 20px; */
