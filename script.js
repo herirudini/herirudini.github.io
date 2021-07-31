@@ -20,14 +20,15 @@ window.addEventListener('click', e => {
 
 // MODAL IMAGE 
 
-// Get the modal
+// Define the modal
 const modal = document.getElementById("myModal");
-// Get the target's src for the modal image src via the function's argument
+// Define the modal image element
 const modalImg = document.getElementById("img01");
-function showModalImage(imgSrc) {
+// Get the target's src for the modal.image.src via the function's argument
+function showModalImage(targetSrc, targetAlt) {
+	modalImg.src = targetSrc;
+	modalImg.alt = targetAlt;
 	modal.style.display = "flex";
-	modalImg.src = imgSrc;
-	modalImg.alt = 'Show Image';
 }
 
 // Get the <span> element that closes the modal

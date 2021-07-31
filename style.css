@@ -302,6 +302,7 @@ aside {
   font-weight: bold;
   opacity: 50%;
   font-style: normal;
+  margin-bottom: 5px;
 }
 .fa {
   /* padding: 10px; */
@@ -390,11 +391,12 @@ footer i {
     max-width: 40%;
   }
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 996px) {
   main.flexrow {
     padding: 0;
     margin: 0;
     flex-direction: column-reverse;
+    align-items: center;
   }
   #content,
   aside {
@@ -508,7 +510,7 @@ footer i {
 .modal-content {
   margin: auto;
   display: block;
-  height: max-content;
+  max-height: 70%;
   max-width: 70%;
 }
 
@@ -560,7 +562,8 @@ footer i {
 /* 100% Image Width on Smaller Screens */
 @media only screen and (max-width: 600px) {
   .modal-content {
-    height: unset;
-    max-width: 100%;
+    max-height: unset;
+    max-width: unset;
+    width: 100%;
   }
 }
