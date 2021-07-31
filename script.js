@@ -22,13 +22,12 @@ window.addEventListener('click', e => {
 
 // Get the modal
 const modal = document.getElementById("myModal");
-// Get the image and insert it inside the modal - use its "alt" text as a caption
+// Get the target's src for the modal image src via the function's argument
 const modalImg = document.getElementById("img01");
-const captionText = document.getElementById("modalImgCaption");
-function showModalImage(imgId) {
-	const targetImg = document.getElementById(imgId);
+function showModalImage(imgSrc) {
 	modal.style.display = "flex";
-	modalImg.src = targetImg.src;
+	modalImg.src = imgSrc;
+	modalImg.alt = 'Show Image';
 }
 
 // Get the <span> element that closes the modal
@@ -37,12 +36,12 @@ const span = document.getElementsByClassName("close")[0];
 span.onclick = function () {
 	modal.style.display = "none";
 }
+//IF you want "Tap to close" feature
 function closeModalImage() {
-	modal.style.display = "none";
+	// modal.style.display = "none";
 }
 
-// Greeting with many language NOT USED AT THE MOMENT
-
+// Greeting with many language NOT ACTIVATED AT THE MOMENT
 const time = new Date().getHours();
 const greetTime = "";
 
@@ -76,4 +75,4 @@ if (language === "en" || language === "en-US") {
 
 const greeting = greetLang;
 
-// alert(greeting) NOT USED AT THE MOMENT
+// alert(greeting) NOT ACTIVATED AT THE MOMENT
