@@ -42,6 +42,39 @@ function closeModalImage() {
 	// modal.style.display = "none";
 }
 
+
+
+//SET SIDEBAR HEIGHT BY JAVASCRIPT
+
+// Define element
+const targetElement = document.getElementById('sideblock');
+//Get browser specific height
+function setHeight() {
+	let myHeight = 0;
+
+	if (typeof (window.innerWidth) == 'number') {
+		//Non-IE
+		myHeight = window.innerHeight;
+	} else if (document.documentElement && (document.documentElement.clientWidth || document.documentElement.clientHeight)) {
+		//IE 6+ in 'standards compliant mode'
+		myHeight = document.documentElement.clientHeight;
+	} else if (document.body && (document.body.clientWidth || document.body.clientHeight)) {
+		//IE 4 compatible
+		myHeight = document.body.clientHeight;
+	}
+	//Adapt the height affected by other styling
+	myHeight -= 110
+	// window.alert( 'Height = ' + myHeight );
+
+	//SET side element height
+	targetElement.style.height = myHeight + 'px'
+}
+//RUN the function
+setHeight()
+
+
+
+
 // Greeting with many language NOT ACTIVATED AT THE MOMENT
 const time = new Date().getHours();
 const greetTime = "";

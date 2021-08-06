@@ -277,16 +277,27 @@ aside {
   margin-left: -10px;
   max-width: 350px;
   height: 100%;
-  overflow-y: auto;
-  scrollbar-width: none;
-  scroll-behavior: smooth;
   position: sticky;
-  top: 50px;
+  top: 70px;
   /* scroll-snap-stop: normal;
     scroll-snap-align: end; */
 }
 /* aside>.card{
     margin-left: 10px;
+} */
+#sideblock {
+  overflow: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+#sideblock:hover {
+  scrollbar-width:unset;
+  -ms-overflow-style: unset;
+}
+
+/* ::-webkit-scrollbar {
+display: none;
 } */
 .opacity {
   font-size: small;
@@ -392,6 +403,9 @@ footer i {
   }
 }
 @media screen and (max-width: 996px) {
+  #sideblock {
+    height: 100%!important;
+  }
   main.flexrow {
     padding: 0;
     margin: 0;
