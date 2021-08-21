@@ -1,5 +1,4 @@
 // RESPONSIVE NAV BAR
-
 /*generating rensponsive nav.
 while this function is excuted, then the class "nav" from the index.html will become "class=nav responsive"
 and so the .responsive in the css will activate*/
@@ -10,7 +9,7 @@ function myButton() {
 	else { x.className = "nav"; }
 
 }
-
+// Close navigation on window touch
 window.addEventListener('click', e => {
 	const x = document.querySelector('#myNav');
 	if (!x.contains(e.target) && x.classList.contains('responsive')) {
@@ -18,8 +17,9 @@ window.addEventListener('click', e => {
 	}
 })
 
-// MODAL IMAGE 
 
+
+// MODAL IMAGE 
 // Define the modal
 const modal = document.getElementById("myModal");
 // Define the modal image element
@@ -30,28 +30,26 @@ function showModalImage(targetSrc, targetAlt) {
 	modalImg.alt = targetAlt;
 	modal.style.display = "flex";
 }
-
 // Get the <span> element that closes the modal
 const span = document.getElementsByClassName("close")[0];
 // When the user clicks on <span> (x), close the modal
 span.onclick = function () {
 	modal.style.display = "none";
 }
-//IF you want "Tap to close" feature
+//in case IF you want a "Tap to close" feature
 function closeModalImage() {
 	// modal.style.display = "none";
 }
 
 
 
-//SET SIDEBAR HEIGHT BY JAVASCRIPT
-
-// Define element
+//SET SIDEBAR DEFAULT HEIGHT BY JAVASCRIPT
+// Define the object element
 const targetElement = document.getElementById('sideblock');
-//Get browser specific height
-function setHeight() {
+//run Immediately Invoked Function Expression
+(function setHeight() {
 	let myHeight = 0;
-
+	//Get browser specific height
 	if (typeof (window.innerWidth) == 'number') {
 		//Non-IE
 		myHeight = window.innerHeight;
@@ -62,31 +60,27 @@ function setHeight() {
 		//IE 4 compatible
 		myHeight = document.body.clientHeight;
 	}
-	//Adapt the height affected by other styling
+	//Reduce myHeight based on other element's styling impact
 	myHeight -= 110
-	// window.alert( 'Height = ' + myHeight );
 
-	//SET side element height
+	//Apply myHeight to object element style
 	targetElement.style.height = myHeight + 'px'
-}
-//RUN the function
-setHeight()
+})()
 
 
 
-
-// Greeting with many language NOT ACTIVATED AT THE MOMENT
+// GREETING WITH RUSSIAN LANGUANGE
 const time = new Date().getHours();
 const greetTime = "";
 
 switch (time) {
-	case (time < 10):
+	case (time < 10 && time > 3):
 		greetTime = ["Good morning", "Selamat pagi", "Доброе утро", "صباح الخير"];
 		break;
 	case (time < 14):
 		greetTime = ["Good day", "Selamat siang", "Добрый день", "مساء الخير"];
 		break;
-	case (time < 16):
+	case (time < 17):
 		greetTime = ["Good afternoon", "Selamat sore", "Добрый день", "مساء الخير"];
 		break;
 	case (time < 21):
