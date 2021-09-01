@@ -1,121 +1,188 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>Curriculum Vitae - Heri Rudini</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700 &display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta name="viewport" content="width=devices-width, initial-scale=1" />
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
+    <meta content="utf-8" http-equiv="encoding" />
+  </head>
 
-<head>
-	<title>Curriculum Vitae - Heri Rudini</title>
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700 &display=swap">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-		integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<meta name="viewport" content="width=devices-width, initial-scale=1">
-	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
-	<meta content="utf-8" http-equiv="encoding">
-</head>
-
-<body>
-	<div id="myModal" class="modal" onclick="closeModalImage()">
-		<span class="close">&times;</span>
-		<img class="modal-content" id="img01">
-	</div>
-	<header>
-		<!-- <div class="jumbotron">
+  <body>
+    <div id="myModal" class="modal" onclick="closeModalImage()">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="img01" />
+    </div>
+    <header>
+      <!-- <div class="jumbotron">
 			<img src="./assets/profile-img3.jpeg" class="profile-img" alt="Lulus Sidang Akhir">
 		</div> -->
-		<div class="title">
-			<h1>Heri Rudini</h1>
-			<p lang="en" translate="no"><b>herirudini@live.com</b></p>
-			<div class="badge flexrow">
-				<a href="https://linkedin.com/in/heri-rudini-8996981b3" target="_blank" class="fab fa-linkedin-square"></a>
-				<a href="https://github.com/herirudini" target="_blank" class="fab fa-github-square"></a>
-				<a href="https://wa.link/srtyjm" target="_blank" class="fab fa-whatsapp-square"></a>
-			</div>
-		</div>
-		<nav id="myNav" class="nav">
-			<ul>
-				<div class="menu">
-					<a href="javascript:void(0);" onclick="myButton()"><i class="fa fa-bars"></i></a>
-				</div>
-				<div class="list flexrow">
-					<li><a href="index.html">Home</a></li>
-					<li><a href="projects.html">My Projects</a></li>
-					<li><a href="aboutme.html">About Me</a></li>
-					<li><a href="certification.html">Certification</a></li>
-				</div>
-			</ul>
-		</nav>
-	</header>
+      <div class="title">
+        <h1>Heri Rudini</h1>
+        <p lang="en" translate="no"><b>herirudini@live.com</b></p>
+        <div class="badge flexrow">
+          <a
+            href="https://linkedin.com/in/heri-rudini-8996981b3"
+            target="_blank"
+            class="fab fa-linkedin-square"
+          ></a>
+          <a
+            href="https://github.com/herirudini"
+            target="_blank"
+            class="fab fa-github-square"
+          ></a>
+          <a
+            href="https://wa.link/srtyjm"
+            target="_blank"
+            class="fab fa-whatsapp-square"
+          ></a>
+        </div>
+      </div>
+      <nav id="myNav" class="nav">
+        <ul>
+          <div class="menu">
+            <a href="javascript:void(0);" onclick="myButton()"
+              ><i class="fa fa-bars"></i
+            ></a>
+          </div>
+          <div class="list flexrow">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">My Projects</a></li>
+            <li><a href="aboutme.html">About Me</a></li>
+            <li><a href="certification.html">Certification</a></li>
+          </div>
+        </ul>
+      </nav>
+    </header>
 
-	<main class="flexrow">
-		<div id="content" class="wide-content">
-			<h2 class="stripe-heading">My Projects</h2>
-			<article id="" class="card">
-				<h3>Vitamix</h3>
-				<img id="vitamix-img" src="./assets/projects/Vitamix.png" class="featured-image" alt="Vitamix website" onclick="showModalImage(this.src)">
-				<p lang="en-US" translate="yes">
-					This is a blog supposed for marketing. This blog have multi pages, namely: Home Page, About Page,
-					and Details Page.
-					Created using HTML CSS Javascript and Jquery, with mobile-first approach. Flex-box is very reliable
-					for styling this
-					blog, flex-box make this blog perfectly responsive, not only good just for mobile-tablet-pc view,
-					but wider flexibility.
-				</p>
-				<p lang="en-US" translate="yes">
-					I put in a couple of css tricks in this project, for example: you can see the jumbotron is kinda being
-					a full wide backgroud at the same time, if you're on desktop you can try to resize the window using your pointer, you will see it's always look prefectly-fit 
-					with the media screen size. And also if you're on mobile, you will notice on the right side of the screen, you will see there's a little
-					button that will expanded out the hidden category list when you tap on it.
-				</p>
-				<p lang="en-US" translate="yes">Here's the link to try this website : <a href="https://herirudini.github.io/vitamix/" target="_blank">https://herirudini.github.io/vitamix/</a></p>
-					<p lang="en-US" translate="yes">You can also check the source code  : <a href="https://github.com/herirudini/vitamix" target="_blank">https://github.com/herirudini/vitamix</a></p>	
-				<div>
-					<h4>Tags:</h4>
-					<em class="opacity">
-					#HTML5 #CSS3 #JQuery
-					</em>
-				</div>
-				
-				<div class="clear"></div>
-			</article>
-			<article id="" class="card">
-				<h3>Acong Kelontong</h3>
-				<img id="acong-img-1" src="./assets/projects/order.png" class="featured-image" alt="Web preview" onclick="showModalImage(this.src)">
-				<p lang="en-US" translate="yes">
-					This is a platform for retail company like grocery, shop, mini market, for example Alfamart, Indomaret, etc. This is app is based on role, it have four pages namely: Owner, Inventory,
-					Finance, and Cashier. Every page have their own "to-do-list" menu according to their role, and the "Owner" role have special menu to access all pages.
-					As a workspace application that supposed to use in office computer, there's no mobile interface included.
-				</p>
-				<p lang="en-US" translate="yes">Link : <a href="https://acongkelontong.herokuapp.com/" target="_blank">https://acongkelontong.herokuapp.com/</a> (email: acong@mail.com , pass: 1234)</p>
-					<p lang="en-US" translate="yes">Source code  : <br>
-						frontend: https://github.com/herirudini/acongkelontong-fe <br>
-						backend: https://github.com/herirudini/Final-Assignment-BE
-					</p>	
-				<div>
-					<b>Other preview:</b>
-					<ul>
-						<li>
-							<img src="./assets/projects/outcome.png" class="featured-image" alt="Web preview" id="acong-img-2" onclick="showModalImage(this.src)">
-						</li>
-						<li>
-							<img src="./assets/projects/addsup.png" class="featured-image" alt="Web preview" id="acong-img-3" onclick="showModalImage(this.src)">
-						</li>
-					</ul>
-				</div>
-				<div>
-					<h4>Tags:</h4>
-					<em class="opacity">
-					#Angular #Express #Mongoose #Typescript #NodeJS #MongoDB #NPM #Bootstrap
-					</em>
-				</div>
-				<div class="clear"></div>
-			</article>
-		</div>
-	</main>
-	<footer>
-		<p>Portofolio of Heri Rudini, 2020-2021</p>
-		<i>Developed by Heri Rudini</i>
-	</footer>
-	<script src="script.js"></script>
-</body>
+    <main class="flexrow">
+      <div id="content" class="wide-content">
+        <h2 class="stripe-heading">My Projects</h2>
+        <article id="" class="card">
+          <h3>Vitamix</h3>
+          <img
+            id="vitamix-img"
+            src="./assets/projects/Vitamix.png"
+            class="featured-image"
+            alt="Vitamix website"
+            onclick="showModalImage(this.src)"
+          />
+          <p lang="en-US" translate="yes">
+            This is a blog supposed for marketing. This blog have multi pages,
+            namely: Home Page, About Page, and Details Page. Created using HTML
+            CSS Javascript and Jquery, with mobile-first approach. Flex-box is
+            very reliable for styling this blog, flex-box make this blog
+            perfectly responsive, not only good just for mobile-tablet-pc view,
+            but wider flexibility.
+          </p>
+          <p lang="en-US" translate="yes">
+            I put in a couple of css tricks in this project, for example: you
+            can see the jumbotron is kinda being a full wide backgroud at the
+            same time, if you're on desktop you can try to resize the window
+            using your pointer, you will see it's always look prefectly-fit with
+            the media screen size. And also if you're on mobile, you will notice
+            on the right side of the screen, you will see there's a little
+            button that will expanded out the hidden category list when you tap
+            on it.
+          </p>
+          <p lang="en-US" translate="yes">
+            Here's the link to try this website :
+            <a href="https://herirudini.github.io/vitamix/" target="_blank"
+              >https://herirudini.github.io/vitamix/</a
+            >
+          </p>
+          <p lang="en-US" translate="yes">
+            You can also check the source code :
+            <a href="https://github.com/herirudini/vitamix" target="_blank"
+              >https://github.com/herirudini/vitamix</a
+            >
+          </p>
+          <div class="card-footer">
+            <h4>Tags:</h4>
+            <em class="opacity"> #HTML5 #CSS3 #JQuery </em>
+          </div>
 
+          <div class="clear"></div>
+        </article>
+        <article id="" class="card">
+          <h3>Acong Kelontong</h3>
+          <img
+            id="acong-img-1"
+            src="./assets/projects/order.png"
+            class="featured-image"
+            alt="Web preview"
+            onclick="showModalImage(this.src)"
+          />
+          <p lang="en-US" translate="yes">
+            This is a platform for retail company like grocery, shop, mini
+            market, for example Alfamart, Indomaret, etc. This is app is based
+            on role, it have four pages namely: Owner, Inventory, Finance, and
+            Cashier. Every page have their own "to-do-list" menu according to
+            their role, and the "Owner" role have special menu to access all
+            pages. As a workspace application that supposed to use in office
+            computer, there's no mobile interface included.
+          </p>
+          <p lang="en-US" translate="yes">
+            Link :
+            <a href="https://acongkelontong.herokuapp.com/" target="_blank"
+              >https://acongkelontong.herokuapp.com/</a
+            >
+            (email: acong@mail.com , pass: 1234)
+          </p>
+          <p lang="en-US" translate="yes">
+            Source code : <br />
+            frontend: https://github.com/herirudini/acongkelontong-fe <br />
+            backend: https://github.com/herirudini/Final-Assignment-BE
+          </p>
+          <div>
+            <b>Other preview:</b>
+            <ul>
+                <img
+                  src="./assets/projects/outcome.png"
+                  class="featured-image"
+                  alt="Web preview"
+                  id="acong-img-2"
+                  onclick="showModalImage(this.src)"
+                />
+             
+                <img
+                  src="./assets/projects/addsup.png"
+                  class="featured-image"
+                  alt="Web preview"
+                  id="acong-img-3"
+                  onclick="showModalImage(this.src)"
+                />
+            </ul>
+          </div>
+          <div class="card-footer">
+            <h4>Tags:</h4>
+            <em class="opacity">
+              #Angular #Express #Mongoose #Typescript #NodeJS #MongoDB #NPM
+              #Bootstrap
+            </em>
+          </div>
+          <div class="clear"></div>
+        </article>
+      </div>
+    </main>
+    <footer>
+      <p>Portofolio of Heri Rudini, 2020-2021</p>
+      <i>Developed by Heri Rudini</i>
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>
