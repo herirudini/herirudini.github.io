@@ -234,6 +234,7 @@ main.flexrow {
   background-color: white;
   overflow: hidden;
   text-overflow: ellipsis;
+  word-wrap: break-word;
   /* display: flex;
   flex-direction: column;
   align-items: flex-start; */
