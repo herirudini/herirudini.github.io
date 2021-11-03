@@ -8,7 +8,45 @@
   font-weight: normal;
   font-style: normal;
 }
+/* SCROLL BAR FOR OTHER BROWSER (Chrome, Edge, Safari) */
 
+::-webkit-scrollbar {
+  background: transparent;
+  overflow: visible;
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #aaaaaa;
+  border: solid #aaaaaa;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #888888;
+  border: #888888;
+}
+::-webkit-scrollbar-thumb:hover:active {
+  background-color: #666666;
+  border: #666666;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+  border-width: 6px 8px;
+  min-width: 10px;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+  border-width: 8px 6px;
+  min-height: 10px;
+}
+
+::-webkit-scrollbar-track-piece {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
 html {
   scroll-behavior: smooth;
   /* height: 100%; */
@@ -300,27 +338,24 @@ aside {
   height: 100%;
   position: sticky;
   top: 70px;
-  /* scroll-snap-stop: normal;
-    scroll-snap-align: end; */
 }
-/* aside>.card{
-    margin-left: 10px;
-} */
+
+/*MAINTAIN SCROLLBAR */
+
 #sideblock {
   /* height: 80vh; */
-  overflow: auto;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  padding: 0 20px;
 }
 
 #sideblock:hover {
-  scrollbar-width:unset;
-  -ms-overflow-style: unset;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  padding-right: 12px;
+  scrollbar-color: #aaaaaa rgba(0, 0, 0, 0); /* thumb and track color for firefox*/
 }
 
-/* ::-webkit-scrollbar {
-display: none;
-} */
 .opacity {
   font-size: small;
   opacity: 50%;
@@ -426,7 +461,11 @@ footer i {
 }
 @media screen and (max-width: 996px) {
   #sideblock {
-    height: 100%!important;
+    height: 100% !important;
+  }
+  #sideblock:hover {
+    overflow-y: hidden;
+    padding-right: 20px;
   }
   main.flexrow {
     padding: 0;
@@ -444,6 +483,8 @@ footer i {
     width: 100%;
     } */
 }
+
+/*Mobile*/
 @media screen and (max-width: 600px) {
   .jumbotron {
     margin: 0;

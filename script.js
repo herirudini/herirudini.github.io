@@ -61,7 +61,7 @@ const targetElement = document.getElementById('sideblock');
 		myHeight = document.body.clientHeight;
 	}
 	//Reduce myHeight based on other element's styling impact
-	myHeight -= 110
+	myHeight -= 150
 
 	//Apply myHeight to object element style
 	targetElement.style.height = myHeight + 'px'
