@@ -46,8 +46,7 @@ function closeModalImage() {
 //SET SIDEBAR DEFAULT HEIGHT BY JAVASCRIPT
 // Define the object element
 const targetElement = document.getElementById('sideblock');
-//run Immediately Invoked Function Expression
-(function setHeight() {
+function setHeight() {
 	let myHeight = 0;
 	//Get browser specific height
 	if (typeof (window.innerWidth) == 'number') {
@@ -65,7 +64,9 @@ const targetElement = document.getElementById('sideblock');
 
 	//Apply myHeight to object element style
 	targetElement.style.height = myHeight + 'px'
-})()
+}
+//run Immediately Invoked Function Expression for setHeight
+(setHeight())
 
 
 
