@@ -92,16 +92,16 @@ function greetings() {
     const date = new Date().getDate();
     const month = new Date().getMonth() + 1; //getMonth() returns Array index number
     const thisYear = new Date().getFullYear();
-    const newYear = (date + month === 2) || (date < 3 && month === 1);
+    const newYear = (date + month === 2) || (date <= 5 && month === 1);
     const christmas = date === 25 && month === 12;
     const aidlFitri = date <= 5 && month === 5;
     console.log('month', month);
     if (newYear) {
-      annualGreetText = `Happy New Year ${thisYear}`;
+      annualGreetText = `Happy New Year ${thisYear}!`;
     } else if (christmas) {
-      annualGreetText = `Marry Christmas`;
+      annualGreetText = `Marry Christmas!`;
     } else if (aidlFitri) {
-      annualGreetText = `Happy Aidl Fitr ${thisYear - 559}H`;
+      annualGreetText = `Happy Aidl Fitr ${thisYear - 559}H!`;
     }
     if (annualGreetText) {
       greetingsElement.innerHTML = annualGreetText;
