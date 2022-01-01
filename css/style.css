@@ -102,7 +102,7 @@ p {
   /* font-size: 20px; */
   padding: 150px 1% 1% 1%;
   margin: 0 15%;
-  background-image: url("./assets/jumbotron.jpg");
+  background-image: url("../assets/jumbotron.jpg");
   background-position: bottom;
   background-size: cover;
   text-align: center;
@@ -646,4 +646,20 @@ footer i {
     max-width: unset;
     width: 100%;
   }
+}
+
+#greeting {
+  text-align: center;
+  font-weight:1000;
+  padding: 5px;
+  font-size:x-large;
+  color: blue;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+  position: absolute;
+  z-index: 1;
+  top: 110px;
+}
+#greeting::after {
+  content: '!';
 }

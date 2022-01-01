@@ -1,243 +1,190 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Portofolio - Heri Rudini</title>
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700 &display=swap"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <meta name="viewport" content="width=devices-width, initial-scale=1" />
-    <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
-    <meta content="utf-8" http-equiv="encoding" />
-  </head>
 
-  <body onresize="setHeight()">
-    <div id="myModal" class="modal" onclick="closeModalImage()">
-      <span class="close">&times;</span>
-      <img class="modal-content" id="img01" />
+<head>
+  <title>Portofolio - Heri Rudini</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700 &display=swap" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" type="text/css" href="./css/style.css" />
+  <meta name="viewport" content="width=devices-width, initial-scale=1" />
+  <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
+  <meta content="utf-8" http-equiv="encoding" />
+</head>
+
+<body onresize="setHeight()">
+  <div id="myModal" class="modal" onclick="closeModalImage()">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="img01" />
+  </div>
+  <header>
+    <div class="jumbotron">
+      <div id="greeting"></div>
+      <img id="profile-img" src="./assets/profile-img-5.png" class="profile-img" alt="Profile image"
+        onclick="showModalImage(this.src)" />
     </div>
-    <header>
-      <div class="jumbotron">
-        <img
-          id="profile-img"
-          src="./assets/profile-img-5.png"
-          class="profile-img"
-          alt="Profile image"
-          onclick="showModalImage(this.src)"
-        />
+    <div class="title">
+      <h1>Heri Rudini</h1>
+      <p lang="en" translate="no" class=""><b>herirudini@live.com</b></p>
+      <div class="badge flexrow">
+        <!-- <a href="https://facebook.com/Heri.Rudini" target="_blank" class="fa fa-facebook"></a> -->
+        <a href="https://linkedin.com/in/heri-rudini-8996981b3" target="_blank" class="fab fa-linkedin-square"></a>
+        <!-- <a href="https://yukitamikir.blogspot.com" target="_blank" class="fa fa-google"></a> -->
+        <a href="https://github.com/herirudini" target="_blank" class="fab fa-github-square"></a>
+        <a href="https://wa.link/srtyjm" target="_blank" class="fab fa-whatsapp-square"></a>
+        <!-- <a href="https://www.instagram.com/heri.rudini/" target="_blank" class="fa fa-instagram"></a> -->
       </div>
-      <div class="title">
-        <h1>Heri Rudini</h1>
-        <p lang="en" translate="no" class=""><b>herirudini@live.com</b></p>
-        <div class="badge flexrow">
-          <!-- <a href="https://facebook.com/Heri.Rudini" target="_blank" class="fa fa-facebook"></a> -->
-          <a
-            href="https://linkedin.com/in/heri-rudini-8996981b3"
-            target="_blank"
-            class="fab fa-linkedin-square"
-          ></a>
-          <!-- <a href="https://yukitamikir.blogspot.com" target="_blank" class="fa fa-google"></a> -->
-          <a
-            href="https://github.com/herirudini"
-            target="_blank"
-            class="fab fa-github-square"
-          ></a>
-          <a
-            href="https://wa.link/srtyjm"
-            target="_blank"
-            class="fab fa-whatsapp-square"
-          ></a>
-          <!-- <a href="https://www.instagram.com/heri.rudini/" target="_blank" class="fa fa-instagram"></a> -->
+    </div>
+    <nav id="myNav" class="nav">
+      <ul>
+        <div class="menu">
+          <a href="javascript:void(0);" onclick="myButton()"><i class="fa fa-bars"></i></a>
+        </div>
+        <div class="list flexrow">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">My Projects</a></li>
+          <li><a href="aboutme.html">About Me</a></li>
+          <li><a href="certification.html">Certification</a></li>
+        </div>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="flexrow">
+    <div id="content">
+      <h2 class="stripe-heading">Updates</h2>
+      <article class="card">
+        <h3>Frontend Dev (Angular)</h3>
+        <em class="date">24 July 2021</em>
+        <section>
+          <img src="./assets/logo-ait.png" class="featured-image" alt="Logo AIT" id="ait-logo-img"
+            onclick="showModalImage(this.src)" />
+          <p lang="en-US" translate="yes">
+            Have a full-time job as a Frontend Developer at PT Akar Inti
+            Teknologi, start from 1st September 2021 until present. Akar Inti
+            Teknologi (AIT) is a software house that specializes in providing
+            financial technology solutions for the financial services
+            industry.
+          </p>
+        </section>
+      </article>
+      <article class="card">
+        <h3>Internship in Full-Stack Developement</h3>
+        <em class="date">24 July 2021</em>
+        <section>
+          <img src="./assets/logosalt3.png" class="featured-image" alt="Logo Salt Academy" id="salt2-logo-img"
+            onclick="showModalImage(this.src)" />
+          <p lang="en-US" translate="yes">
+            Hired at PT Akomedia Asia (Salt) in a Full-Stack
+            developer internship program in a proect of building goverment's
+            website (Ministry of Finance Indonesia). My position in this job
+            is as a team member doing front-end stack (slicing design from
+            figma, fetching API data from backend). Started from 15 July until
+            16 August 2021. By joining this internship i have learned new
+            skill, there are SCSS and Tailwind.
+          </p>
+        </section>
+      </article>
+      <article class="card">
+        <h3>Bootcamp Full-Stack Jvascript</h3>
+        <em class="date">1 May 2021</em>
+        <section>
+          <img src="./assets/logosalt.png" class="featured-image" alt="Logo Salt Academy" id="salt-logo-img"
+            onclick="showModalImage(this.src)" />
+
+          <p lang="en-US" translate="yes">
+            Recently joining bootcamp at Salt Academy Indonesia in Full-Stack
+            Javascript class. This class is started from february to june
+            2021. In this class i have gained my skills in web programming.
+            About 4 month i learn many things like framework, library.. let
+            say Mongoose, Express, Angular, Node, Typescript, and few
+            soft-skills namely leadership, communication, and few seminars.
+          </p>
+          <p lang="en-US" translate="yes">
+            This class has given me a very good experience, every assignment i
+            have in this bootcamp is somekind of "real case assignment". we
+            were creating website that required by user (Salt Academy's
+            client), we were doing project that really challenging. The
+            atmosphere in this class is very fun, i like the people, my
+            friends, our mentors and lecturer, i am really glad to meet them
+            in this occasion.
+          </p>
+        </section>
+      </article>
+      <article class="card">
+        <h3>Web Programming Course</h3>
+        <em class="date">1 May 2021</em>
+        <section>
+          <img src="./assets/logo-dicoding.JPG" class="featured-image" alt="Logo Skill Academy" id="dicoding-logo-img"
+            onclick="showModalImage(this.src)" />
+          <p>
+            I have taken a course to gain my skill in fundamental web
+            programming. This is a basic web programming course, organized by
+            Dicoding.Id, in this course i have learn more in fundamentals in
+            HTML, CSS and Javascript. I've learn the basic concept of what we
+            call a "clean code", reusable function, and efective number of
+            lines of code.
+          </p>
+        </section>
+      </article>
+      <article class="card">
+        <h3>UX Course</h3>
+        <em class="date">1 May 2021</em>
+        <section>
+          <img src="./assets/logo-skillacademy.jpeg" class="featured-image" alt="Logo Skill Academy"
+            id="skillacademy-logo-img" onclick="showModalImage(this.src)" />
+          <p>
+            For one month (26 Aug - 26 Sep 2020) i'm taking a UX (User
+            Experience) course to gain my skills in developing website. the
+            skill of "coding" isn't just enough to be a good programmer, I
+            need to improve my skill in web programming in terms of design
+            too. At least i have to understand the basic concept of "User
+            Friendly".
+          </p>
+          <p>
+            This course is organized by Skill Acdemy by Ruang Guru. In this
+            class i have learn about user journey, userflow, ux research, and
+            the fundamental user experience. By joining this course i hope i
+            would be able to improve my website, at least i hope my own web
+            wont be too bad for the user experience, lol.
+          </p>
+        </section>
+      </article>
+    </div>
+
+    <aside>
+      <h2 class="stripe-heading">Overview</h2>
+      <div style="padding-left: 0; padding-right: 0;" class="card">
+        <div id="sideblock">
+          <section class="event">
+            <h3>Intro</h3>
+            <p>
+              Hello, i'm a self-taugh web programmer. I'm developing website,
+              blog, and web app.
+            </p>
+            <p>
+              As a junior full-stack web developer, i'm able to work in the
+              front-end or the back-end project, i can say that i have a little
+              enough experience on both.
+            </p>
+            <p>
+              Have your time reading my portofolio, i update things about my
+              career-growth here in this blog.
+            </p>
+            <p>Regards.</p>
+            <em class="opacity">Bandung City, West-Java, Indonesia</em>
+          </section>
+          <section class="event">
+            <h3>Tags</h3>
+            <em class="opacity">#Angular #Mongoose #Express #NodeJS #Typescript #HTML5 #CSS3 #ES6
+              #Javascript #JQuery #Jira #Scrum #GIT #GitHub #NestJS #SCSS
+              #Tailwind
+            </em>
+          </section>
         </div>
       </div>
-      <nav id="myNav" class="nav">
-        <ul>
-          <div class="menu">
-            <a href="javascript:void(0);" onclick="myButton()"
-              ><i class="fa fa-bars"></i
-            ></a>
-          </div>
-          <div class="list flexrow">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="projects.html">My Projects</a></li>
-            <li><a href="aboutme.html">About Me</a></li>
-            <li><a href="certification.html">Certification</a></li>
-          </div>
-        </ul>
-      </nav>
-    </header>
-
-    <main class="flexrow">
-      <div id="content">
-        <h2 class="stripe-heading">Updates</h2>
-        <article class="card">
-          <h3>Frontend Dev (Angular)</h3>
-          <em class="date">24 July 2021</em>
-          <section>
-            <img
-              src="./assets/logo-ait.png"
-              class="featured-image"
-              alt="Logo AIT"
-              id="ait-logo-img"
-              onclick="showModalImage(this.src)"
-            />
-            <p lang="en-US" translate="yes">
-              Have a full-time job as a Frontend Developer at PT Akar Inti
-              Teknologi, start from 1st September 2021 until present. Akar Inti
-              Teknologi (AIT) is a software house that specializes in providing
-              financial technology solutions for the financial services
-              industry.
-            </p>
-          </section>
-        </article>
-        <article class="card">
-          <h3>Internship in Full-Stack Developement</h3>
-          <em class="date">24 July 2021</em>
-          <section>
-            <img
-              src="./assets/logosalt3.png"
-              class="featured-image"
-              alt="Logo Salt Academy"
-              id="salt2-logo-img"
-              onclick="showModalImage(this.src)"
-            />
-            <p lang="en-US" translate="yes">
-              Hired at PT Akomedia Asia (Salt) in a Full-Stack
-              developer internship program in a proect of building goverment's
-              website (Ministry of Finance Indonesia). My position in this job
-              is as a team member doing front-end stack (slicing design from
-              figma, fetching API data from backend). Started from 15 July until
-              16 August 2021. By joining this internship i have learned new
-              skill, there are SCSS and Tailwind.
-            </p>
-          </section>
-        </article>
-        <article class="card">
-          <h3>Bootcamp Full-Stack Jvascript</h3>
-          <em class="date">1 May 2021</em>
-          <section>
-            <img
-              src="./assets/logosalt.png"
-              class="featured-image"
-              alt="Logo Salt Academy"
-              id="salt-logo-img"
-              onclick="showModalImage(this.src)"
-            />
-
-            <p lang="en-US" translate="yes">
-              Recently joining bootcamp at Salt Academy Indonesia in Full-Stack
-              Javascript class. This class is started from february to june
-              2021. In this class i have gained my skills in web programming.
-              About 4 month i learn many things like framework, library.. let
-              say Mongoose, Express, Angular, Node, Typescript, and few
-              soft-skills namely leadership, communication, and few seminars.
-            </p>
-            <p lang="en-US" translate="yes">
-              This class has given me a very good experience, every assignment i
-              have in this bootcamp is somekind of "real case assignment". we
-              were creating website that required by user (Salt Academy's
-              client), we were doing project that really challenging. The
-              atmosphere in this class is very fun, i like the people, my
-              friends, our mentors and lecturer, i am really glad to meet them
-              in this occasion.
-            </p>
-          </section>
-        </article>
-        <article class="card">
-          <h3>Web Programming Course</h3>
-          <em class="date">1 May 2021</em>
-          <section>
-            <img
-              src="./assets/logo-dicoding.JPG"
-              class="featured-image"
-              alt="Logo Skill Academy"
-              id="dicoding-logo-img"
-              onclick="showModalImage(this.src)"
-            />
-            <p>
-              I have taken a course to gain my skill in fundamental web
-              programming. This is a basic web programming course, organized by
-              Dicoding.Id, in this course i have learn more in fundamentals in
-              HTML, CSS and Javascript. I've learn the basic concept of what we
-              call a "clean code", reusable function, and efective number of
-              lines of code.
-            </p>
-          </section>
-        </article>
-        <article class="card">
-          <h3>UX Course</h3>
-          <em class="date">1 May 2021</em>
-          <section>
-            <img
-              src="./assets/logo-skillacademy.jpeg"
-              class="featured-image"
-              alt="Logo Skill Academy"
-              id="skillacademy-logo-img"
-              onclick="showModalImage(this.src)"
-            />
-            <p>
-              For one month (26 Aug - 26 Sep 2020) i'm taking a UX (User
-              Experience) course to gain my skills in developing website. the
-              skill of "coding" isn't just enough to be a good programmer, I
-              need to improve my skill in web programming in terms of design
-              too. At least i have to understand the basic concept of "User
-              Friendly".
-            </p>
-            <p>
-              This course is organized by Skill Acdemy by Ruang Guru. In this
-              class i have learn about user journey, userflow, ux research, and
-              the fundamental user experience. By joining this course i hope i
-              would be able to improve my website, at least i hope my own web
-              wont be too bad for the user experience, lol.
-            </p>
-          </section>
-        </article>
-      </div>
-
-      <aside>
-        <h2 class="stripe-heading">Overview</h2>
-        <div style="padding-left: 0; padding-right: 0;" class="card">
-          <div id="sideblock">
-            <section class="event">
-              <h3>Intro</h3>
-              <p>
-                Hello, i'm a self-taugh web programmer. I'm developing website,
-                blog, and web app.
-              </p>
-              <p>
-                As a junior full-stack web developer, i'm able to work in the
-                front-end or the back-end project, i can say that i have a little
-                enough experience on both.
-              </p>
-              <p>
-                Have your time reading my portofolio, i update things about my
-                career-growth here in this blog.
-              </p>
-              <p>Regards.</p>
-              <em class="opacity">Bandung City, West-Java, Indonesia</em>
-            </section>
-            <section class="event">
-              <h3>Tags</h3>
-              <em class="opacity"
-                >#Angular #Mongoose #Express #NodeJS #Typescript #HTML5 #CSS3 #ES6
-                #Javascript #JQuery #Jira #Scrum #GIT #GitHub #NestJS #SCSS
-                #Tailwind
-              </em>
-            </section>
-          </div>
-        </div>
-        <!-- <div class="card">
+      <!-- <div class="card">
 				<h3>Live events</h3>
 				<section class="event">
 					<h4>Join Bootcamp</h4>
@@ -255,12 +202,13 @@
 					<p>Graduated from my university "Universitas Padjadjaran" Indonesia</p>
 				</section>
 			</div> -->
-      </aside>
-    </main>
-    <footer>
-      <p id="copyright">Portofolio of Heri Rudini, <strong>2020-<em></em></strong></p>
-      <i>Developed by Heri Rudini</i>
-    </footer>
-    <script src="script.js"></script>
-  </body>
+    </aside>
+  </main>
+  <footer>
+    <div>Portofolio of Heri Rudini, <strong>2020-<span class="footerTextLastYear"></span></strong></div>
+    <i>Developed by Heri Rudini</i>
+  </footer>
+</body>
+<script src="./js/script.js"></script>
+<script scr="./js/greetings.js"></script>
 </html>
