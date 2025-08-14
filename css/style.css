@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap"); */
 
 /* @import url('https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css'); */
 @font-face {
@@ -52,7 +52,7 @@ html {
   /* height: 100%; */
 }
 body {
-  font-family: "NotoSans-CondensedLight", "DM Sans", sans-serif;
+  font-family: "NotoSans-CondensedLight", sans-serif;
   margin: 0;
   padding: 0;
   background-color: rgba(128, 128, 128, 0.1);
