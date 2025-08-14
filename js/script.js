@@ -175,3 +175,12 @@ function execGreetings() {
   }
 }
 execGreetings();
+
+
+//TAP TO copy email address
+function copyEmail() {
+  const email = "herirudini@live.com";
+  navigator.clipboard.writeText(email).then(() => {
+    alert("Email address copied to clipboard: " + email);
+  });
+}
