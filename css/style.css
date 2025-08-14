@@ -3,10 +3,10 @@
 /* @import url('https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css'); */
 @font-face {
   font-family: "NotoSans-CondensedLight";
-  src: url("/assets/font/NotoSans-hinted/NotoSans-Condensed.ttf"),
-    format("truetype");
+  src: url("/assets/font/NotoSans-hinted/NotoSans-Condensed.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 /* SCROLL BAR FOR OTHER BROWSER (Chrome, Edge, Safari) */
 
