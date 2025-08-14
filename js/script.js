@@ -78,8 +78,6 @@ setHeight();
 const footerTextLastYear = document.querySelector('span.footerTextLastYear');
 function updateYear() {
   const thisYear = new Date().getFullYear().toString();
-  console.log('thisYear', thisYear);
-  console.log('footerTextLastYear', footerTextLastYear);
   footerTextLastYear.innerHTML = thisYear;
 }
 updateYear();
@@ -95,7 +93,6 @@ function greetings() {
     const newYear = (date + month === 2) || (date <= 5 && month === 1);
     const christmas = date === 25 && month === 12;
     const aidlFitri = date <= 5 && month === 5;
-    console.log('month', month);
     if (newYear) {
       annualGreetText = `Happy New Year ${thisYear}!`;
     } else if (christmas) {
@@ -176,7 +173,5 @@ function execGreetings() {
   if (isIndex) {
     greetings();
   }
-  console.log('urlPath', typeof urlPath, urlPath);
-  console.log('isIndex', isIndex);
 }
 execGreetings();
